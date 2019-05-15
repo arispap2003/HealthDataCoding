@@ -9,16 +9,16 @@ The set is unique-proven and easy to find anywhere (because it use their telepho
 
 Can be easily used as a library. For example in SAS: <br>
 
-/* Fetch the file from the repository */ <br>
+/\* Fetch the file from the repository \*/ <br>
 filename probly temp;   <br>
 proc http   <br>
 url="https://raw.githubusercontent.com/arispap2003/HealthDataCoding/master/hospitals/hospitals.csv"  <br>
 method="GET"  <br>
 out=probly;  <br>
 run;  <br>
-/* Tell SAS to allow "nonstandard" names */   <br>
+/\* Tell SAS to allow "nonstandard" names \*/   <br>
 options validvarname=any;   <br>
-/* import to a SAS data set */   <br>
+/\* import to a SAS data set \*/   <br>
 proc import  <br>
 file=probly  <br>
 out=work.probly replace   <br>
